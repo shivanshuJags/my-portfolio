@@ -1,14 +1,21 @@
+"use client";
+import { useFormState } from "react-dom";
+
+import { contactForm } from "../../../lib/action";
+import ContactFormSubmit from "./contact-submit";
+
 import classes from "@/styles/sendmail.module.css";
 
 export default function SendMail() {
+  const [state, formAction] = useFormState(contactForm, { message: "" });
   return (
     <>
       <h2 className={classes.mailTitle}>Send me an email</h2>
       <main className="">
-        <form className="flex flex-row gap-4">
-          <div className="col1 basis-1/2">
+        <form className="mx-auto flex flex-wrap" action={formAction}>
+          <div className="col1 p-4 w-full lg:w-1/2">
             <label
-              htmlFor="email-address-icon"
+              htmlFor="email"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
               Your Email
@@ -27,15 +34,16 @@ export default function SendMail() {
                 </svg>
               </div>
               <input
-                type="text"
-                id="email-address-icon"
+                type="email"
+                id="email"
+                name="email"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="name@flowbite.com"
+                placeholder="xyz@xyz.com"
                 required
               />
             </div>
             <label
-              htmlFor="name-field"
+              htmlFor="username"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
               Your Name
@@ -55,14 +63,15 @@ export default function SendMail() {
               </div>
               <input
                 type="text"
-                id="name-field"
+                id="username"
+                name="username"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Enter Your Name"
                 required
               />
             </div>
           </div>
-          <div className="col2 basis-1/2">
+          <div className="col2 p-4 w-full lg:w-1/2">
             <label
               htmlFor="message"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -71,18 +80,14 @@ export default function SendMail() {
             </label>
             <textarea
               id="message"
+              name="message"
               rows={4}
               className="h-32 block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Leave a comment..."
               required
             ></textarea>
-
-            <button
-              type="button"
-              className="mt-6 mx-0 w-32 float-right text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-            >
-              Submit
-            </button>
+            <ContactFormSubmit cls="mt-6 mx-0 w-32 float-right text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700" />
+            {state?.message && <p>{state.message}</p>}
           </div>
         </form>
       </main>

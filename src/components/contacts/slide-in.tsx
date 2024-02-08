@@ -19,7 +19,7 @@ const SlideInDiv = ({ children, postion }: SlideInProps) => {
     <div
       className={`${classes.slideInDiv} ${
         postion === "left" ? classes.left : classes.right
-      } ${isVisible ? classes.slideInActive : ""} basis-1/2`}
+      } ${isVisible ? classes.slideInActive : ""} p-4 lg:w-1/2`}
     >
       {children}
     </div>
