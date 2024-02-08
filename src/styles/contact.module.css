@@ -1,0 +1,9 @@
+.section1 {
+  background: none;
+  border: none;
+  border-bottom: #dddddd solid 1px;
+}
+.section2 {
+  width: 100%;
+  max-width: 1180px;
+}

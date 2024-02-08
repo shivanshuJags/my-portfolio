@@ -1,0 +1,77 @@
+.socialList {
+  list-style-type: none;
+  padding-top: 3.2rem;
+}
+
+.socialList li {
+  height: 3.2rem;
+  margin-bottom: 3.2rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.socialList li a {
+  padding-left: 5.8rem;
+  line-height: 3rem;
+  display: block;
+  height: 3.12rem;
+  background: url("../assets/sprite.png") no-repeat;
+  text-decoration: none;
+  font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial,
+    Sans-serif;
+}
+
+.socialList li .twitter {
+  background-position: 0px -598px;
+  color: #189acd;
+}
+
+.socialList li a.facebook {
+  background-position: 0px -547px;
+  color: #43609c;
+}
+
+.socialList li a.linkedin {
+  background-position: 0px -700px;
+  color: #0982c0;
+}
+
+.socialList li a.instagram {
+  background-position: 0px -751px;
+  color: #ef0074;
+}
+
+.slideInDiv {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.left {
+  transform: translateX(-100%);
+}
+.right {
+  transform: translateX(100%);
+}
+.slideInActive {
+  opacity: 1;
+  transform: translateX(0);
+}
+.contact-img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 390px) {
+  .socialList li {
+    width: 49%;
+  }
+}
+
+@media only screen and (min-width: 830px) {
+  .title {
+    font-size: 5rem;
+  }
+  .intro {
+    font-size: 1.6rem;
+    color: #757575;
+    line-height: 1.3;
+  }
+}
