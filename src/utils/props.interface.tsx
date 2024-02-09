@@ -12,3 +12,7 @@ export interface SlideInProps {
 export interface ClassProps {
   cls: string;
 }
+
+export interface ChildProps {
+  children: React.ReactNode;
+}

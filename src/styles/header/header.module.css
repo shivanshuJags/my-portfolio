@@ -1,0 +1,17 @@
+.link {
+  display: block;
+  color: #fff;
+  line-height: 92px;
+  padding: 0 1em;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+  color: #757575;
+  text-shadow: 0 0 18px rgba(158, 156, 151, 0.8);
+}
+.active {
+  color: #757575;
+  text-shadow: 0 0 18px rgba(158, 156, 151, 0.8);
+}
