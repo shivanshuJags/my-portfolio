@@ -1,0 +1,48 @@
+.iconWrapper {
+  list-style-type: none;
+}
+
+.iconWrapper li a {
+  line-height: 3rem;
+  display: block;
+  text-decoration: none;
+}
+
+.iconWrapper li a {
+  background: url("../assets/program_icons.png") no-repeat;
+}
+
+.iconWrapper li .nodeJs {
+  background-position: 0px -470px;
+}
+
+.iconWrapper li .angular {
+  background-position: 0px -235px;
+}
+
+.iconWrapper li .reactJs {
+  background-position: 0px -585px;
+}
+
+.iconWrapper li .nextJs {
+  background-position: 0px -350px;
+}
+
+.iconWrapper li .javaScript {
+  background-position: 0px -120px;
+}
+
+.iconWrapper li .html {
+  background-position: 0px -0px;
+}
+
+.iconWrapper li .css {
+  background-position: 0px -705px;
+}
+
+@media only screen and (min-width: 390px) {
+  .iconWrapper li {
+    width: 30%;
+    height: 6.5rem;
+  }
+}

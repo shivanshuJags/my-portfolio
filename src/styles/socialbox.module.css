@@ -17,8 +17,6 @@
   height: 3.12rem;
   background: url("../assets/sprite.png") no-repeat;
   text-decoration: none;
-  font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial,
-    Sans-serif;
 }
 
 .socialList li .twitter {
