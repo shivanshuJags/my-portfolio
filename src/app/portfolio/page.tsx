@@ -6,6 +6,7 @@ import Card from "@/components/card/card";
 
 import classes from "@/styles/portfolio/portfolio.module.css";
 import ProgrammingLanguage from "@/components/programming/programming-language";
+import TimelineComponent from "@/components/timeline/timeline";
 
 export default function PortfolioPage() {
   return (
@@ -18,7 +19,7 @@ export default function PortfolioPage() {
               Check out some of my latest UI/UX design case studies.
             </p>
             <p className={classes.intro2}>
-              I've worked at start-ups, tech companies and corporates on a range
+              ve worked at start-ups, tech companies and corporates on a range
               of different projects, including design systems, websites and
               apps.
             </p>
@@ -29,12 +30,9 @@ export default function PortfolioPage() {
         </div>
       </WhiteSection>
       <div className="px-4 pt-8 max-w-screen-xl mx-auto w-full">
-        <h2 className={classes.title2}>My Work</h2>
+        <h2 className={classes.title2}>Work Experience</h2>
         <div className="flex flex-wrap">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <TimelineComponent />
         </div>
       </div>
     </>

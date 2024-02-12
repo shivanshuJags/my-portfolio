@@ -1,6 +1,12 @@
 .header {
-    height: 6rem;
+  height: 6rem;
 }
 .header nav {
-    background-color: #111111;
+  background-color: #111111;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+  background: url("../assets/logo.svg") no-repeat;
 }
