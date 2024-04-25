@@ -1,0 +1,82 @@
+{
+  "navHeader": ["Home", "Portfolio", "Blogs", "Contacts"],
+  "logoInitials": "SS",
+  "candidateData": {
+    "firstName": "Shivanshu",
+    "lastName": "Sahu",
+    "fullName": "Shivanshu Sahu",
+    "shortDescription": "",
+    "primaryRole": "Full Stack Developer",
+    "SecondaryRole": "UI Developer",
+    "resumeCta": "Download CV",
+    "profiles": [
+      {
+        "name": "linked in",
+        "url": ""
+      },
+      {
+        "name": "mail",
+        "url": ""
+      },
+      {
+        "name": "youtube",
+        "url": ""
+      },
+      {
+        "name": "github",
+        "url": ""
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "shortDescription1": "The main area of expertise is front end development (client side of the web).",
+    "shortDescription2": "HTML, CSS, JS, building small and medium web applications with Vue or React, custom plugins, features, animations, and coding interactive layouts. I have also full-stack developer experience with one of the most popular open source CMS on the web - WordPress",
+    "timeline": [
+      {
+        "index": 1,
+        "duration": " 2024 — Present",
+        "title": "Senior Frontend Engineer, Accessibility ·",
+        "description": "Build and maintain critical components used to constructfgggggggggggggggggggggggggggggggd.",
+        "badge": "Angular,HTML,CSS,JavaScript,Bootstrap"
+      },
+      {
+        "index": 2,
+        "duration": " 2024 — Present",
+        "title": "Senior Frontend Engineer, Accessibility ·",
+        "description": "Build and maintain critical components used to constructfgggggggggggggggggggggggggggggggd.",
+        "badge": "Angular,HTML,CSS,JavaScript,Bootstrap"
+      },
+      {
+        "index": 3,
+        "duration": " 2024 — Present",
+        "title": "Senior Frontend Engineer, Accessibility ·",
+        "description": "Build and maintain critical components used to constructfgggggggggggggggggggggggggggggggd.",
+        "badge": "Angular,HTML,CSS,JavaScript,Bootstrap"
+      },
+      {
+        "index": 4,
+        "duration": " 2024 — Present",
+        "title": "Senior Frontend Engineer, Accessibility ·",
+        "description": "Build and maintain critical components used to constructfgggggggggggggggggggggggggggggggd.",
+        "badge": "Angular,HTML,CSS,JavaScript,Bootstrap"
+      },
+      {
+        "index": 5,
+        "duration": " 2024 — Present",
+        "title": "Senior Frontend Engineer, Accessibility ·",
+        "description": "Build and maintain critical components used to constructfgggggggggggggggggggggggggggggggd.",
+        "badge": "Angular,HTML,CSS,JavaScript,Bootstrap"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "shortDescription1": "The main area of expertise is front end development (client side of the web).",
+    "shortDescription2": "HTML, CSS, JS, building small and medium web applications with Vue or React, custom plugins, features, animations, and coding interactive layouts. I have also full-stack developer experience with one of the most popular open source CMS on the web - WordPress"
+  },
+  "footer": {
+    "title": "Contact Me",
+    "copyright": "2024 © All Rights Reserved"
+  }
+}
